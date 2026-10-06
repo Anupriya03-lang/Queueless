@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Queueless - College Digital Queue</title>
+
+    <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <div class="logo">
+        <span>Q</span>
+        <div>
+            <h2>Queueless</h2>
+            <p>College Digital Queue</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#get-token">Get Token</a>
+        <a href="#live-queue">Live Queue</a>
+        <a href="#admin">Admin</a>
+    </nav>
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+            <p class="small-title">SMART COLLEGE QUEUE SYSTEM</p>
+
+            <h1>
+                Skip the Queue.<br>
+                <span>Save Your Time.</span>
+            </h1>
+
+            <p>
+                Book your college service token online and avoid
+                waiting in long queues.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#get-token" class="primary-btn">
+                    Get Your Token
+                </a>
+
+                <a href="#live-queue" class="secondary-btn">
+                    View Live Queue
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-card">
+
+            <div class="clock-icon">⏱</div>
+
+            <h3>Token Validity</h3>
+
+            <div class="time-big">20 MIN</div>
+
+            <p>
+                Your token is valid for 20 minutes
+                after generation.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BOOKING RULES ================= -->
+
+<section class="rules">
+
+    <div class="rule-card">
+        <div class="rule-icon">🕘</div>
+        <h3>Booking Starts</h3>
+        <p>8:45 AM</p>
+    </div>
+
+    <div class="rule-card">
+        <div class="rule-icon">🕓</div>
+        <h3>Booking Closes</h3>
+        <p>4:00 PM</p>
+    </div>
+
+    <div class="rule-card">
+        <div class="rule-icon">⏱</div>
+        <h3>Token Validity</h3>
+        <p>20 Minutes</p>
+    </div>
+
+    <div class="rule-card">
+        <div class="rule-icon">📱</div>
+        <h3>Online Booking</h3>
+        <p>Easy & Fast</p>
+    </div>
+
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section id="services" class="section">
+
+    <div class="section-title">
+
+        <p>OUR SERVICES</p>
+
+        <h2>Choose Your College Service</h2>
+
+        <span>
+            Select the service you need and book your token.
+        </span>
+
+    </div>
+
+
+    <div class="services-grid">
+
+        <div class="service-card">
+            <div class="service-icon">🏢</div>
+            <h3>Administration Office</h3>
+            <p>General college administration services.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💳</div>
+            <h3>Fees Section</h3>
+            <p>Fee payment and fee related services.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📄</div>
+            <h3>Certificate Section</h3>
+            <p>Apply for certificates and documents.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🎓</div>
+            <h3>Academic Section</h3>
+            <p>Academic and examination related services.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💼</div>
+            <h3>Placement Cell</h3>
+            <p>Placement and career related services.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">📚</div>
+            <h3>Library</h3>
+            <p>Library support and book related services.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🚌</div>
+            <h3>Transport Office</h3>
+            <p>College transport related services.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>IT Support</h3>
+            <p>Technical and computer support services.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GET TOKEN ================= -->
+
+<section id="get-token" class="booking-section">
+
+    <div class="section-title">
+
+        <p>BOOK YOUR TOKEN</p>
+
+        <h2>Get Your Token</h2>
+
+        <span>
+            Enter your details and select the required service.
+        </span>
+
+    </div>
+
+
+    <div class="booking-card">
+
+        <div id="bookingStatus" class="booking-status">
+            Checking booking status...
+        </div>
+
+
+        <!-- SERVICE -->
+
+        <div class="form-group">
+
+            <label for="service">
+                Select Service
+            </label>
+
+            <select id="service" required>
+
+                <option value="">
+                    Select a service
+                </option>
+
+                <option value="Administration Office">
+                    Administration Office
+                </option>
+
+                <option value="Fees Section">
+                    Fees Section
+                </option>
+
+                <option value="Certificate Section">
+                    Certificate Section
+                </option>
+
+                <option value="Academic Section">
+                    Academic Section
+                </option>
+
+                <option value="Placement Cell">
+                    Placement Cell
+                </option>
+
+                <option value="Library">
+                    Library
+                </option>
+
+                <option value="Transport Office">
+                    Transport Office
+                </option>
+
+                <option value="IT Support">
+                    IT Support
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- REGISTER NUMBER -->
+
+        <div class="form-group">
+
+            <label for="registerNumber">
+                Student Register Number
+            </label>
+
+            <input
+                type="text"
+                id="registerNumber"
+                placeholder="Example: 23CSE1027"
+                required
+            >
+
+        </div>
+
+
+        <button
+            class="generate-btn"
+            onclick="getToken()"
+        >
+            Generate Token
+        </button>
+
+
+        <p class="privacy-note">
+            🔒 Your register number is visible only to the admin.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MY TOKEN ================= -->
+
+<section id="my-token" class="section">
+
+    <div class="section-title">
+
+        <p>YOUR TOKEN</p>
+
+        <h2>My Token</h2>
+
+    </div>
+
+
+    <div
+        id="tokenCard"
+        class="token-card hidden"
+    >
+
+        <div class="token-top">
+
+            <div>
+                <p>Your Token</p>
+
+                <h1 id="tokenNumber">
+                    Q001
+                </h1>
+            </div>
+
+            <span
+                id="tokenStatus"
+                class="status waiting"
+            >
+                Waiting
+            </span>
+
+        </div>
+
+
+        <div class="token-details">
+
+            <div>
+                <span>Service</span>
+                <strong id="tokenService">-</strong>
+            </div>
+
+            <div>
+                <span>Booking Time</span>
+                <strong id="bookingTime">-</strong>
+            </div>
+
+            <div>
+                <span>Valid Until</span>
+                <strong id="validUntil">-</strong>
+            </div>
+
+            <div>
+                <span>People Ahead</span>
+                <strong id="peopleAhead">0</strong>
+            </div>
+
+        </div>
+
+
+        <div class="countdown-box">
+
+            <p>Token expires in</p>
+
+            <h2 id="countdown">
+                20:00
+            </h2>
+
+        </div>
+
+
+        <div class="token-actions">
+
+            <button
+                onclick="downloadToken()"
+                class="download-btn"
+            >
+                ⬇ Download Token
+            </button>
+
+            <button
+                onclick="cancelToken()"
+                class="cancel-btn"
+            >
+                Cancel Token
+            </button>
+
+        </div>
+
+    </div>
+
+    <div
+        id="noToken"
+        class="no-token"
+    >
+        No active token. Generate a token above.
+    </div>
+
+</section>
+
+
+<!-- ================= LIVE QUEUE ================= -->
+
+<section id="live-queue" class="queue-section">
+
+    <div class="section-title">
+
+        <p>REAL-TIME STATUS</p>
+
+        <h2>Live Queue</h2>
+
+        <span>
+            Check the current queue status.
+        </span>
+
+    </div>
+
+
+    <div class="queue-grid">
+
+        <div class="queue-box">
+
+            <span>Current Token</span>
+
+            <strong id="currentToken">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="queue-box">
+
+            <span>Waiting Tokens</span>
+
+            <strong id="waitingCount">
+                0
+            </strong>
+
+        </div>
+
+
+        <div class="queue-box">
+
+            <span>Completed</span>
+
+            <strong id="completedCount">
+                0
+            </strong>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ADMIN ================= -->
+
+<section id="admin" class="admin-section">
+
+    <div class="section-title">
+
+        <p>ADMINISTRATION</p>
+
+        <h2>Admin Login</h2>
+
+    </div>
+
+
+    <div
+        id="adminLogin"
+        class="admin-card"
+    >
+
+        <div class="form-group">
+
+            <label>
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="adminUsername"
+                placeholder="Enter username"
+            >
+
+        </div>
+
+
+        <div class="form-group">
+
+            <label>
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="adminPassword"
+                placeholder="Enter password"
+            >
+
+        </div>
+
+
+        <button
+            class="generate-btn"
+            onclick="adminLogin()"
+        >
+            Admin Login
+        </button>
+
+        <p id="adminMessage"></p>
+
+    </div>
+
+
+    <!-- ADMIN DASHBOARD -->
+
+    <div
+        id="adminDashboard"
+        class="admin-dashboard hidden"
+    >
+
+        <div class="admin-header">
+
+            <div>
+                <p>ADMIN PANEL</p>
+                <h2>Queue Management</h2>
+            </div>
+
+            <button
+                onclick="callNext()"
+                class="next-btn"
+            >
+                Call Next
+            </button>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Token</th>
+                        <th>Register Number</th>
+                        <th>Service</th>
+                        <th>Booking Time</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="adminTableBody">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+            <h2>Queueless</h2>
+
+            <p>
+                Digital Queue Management System
+                for College.
+            </p>
+        </div>
+
+
+        <div>
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#get-token">Get Token</a>
+            <a href="#live-queue">Live Queue</a>
+        </div>
+
+
+        <div>
+            <h3>Booking Time</h3>
+
+            <p>8:45 AM - 4:00 PM</p>
+            <p>Token Validity: 20 Minutes</p>
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+        © 2026 Queueless. College Digital Queue System.
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="./java.js"></script>
+
+</body>
+</html>
